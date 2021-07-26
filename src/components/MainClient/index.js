@@ -26,15 +26,9 @@ const [client, setClient] = useState({
       let listaClientes = JSON.parse(clientes);
       setCadastros(listaClientes)
     }
-  // }
   }
 
-  
-  // function correctId(){
-  //   let clientes = localStorage.getItem('clientes');
-  //   let listaClientes = JSON.parse(clientes);
-  //   return listaClientes.length
-  // }
+
   function salvar(){
     client.id = hash(client);
     let clientes = localStorage.getItem('clientes');
