@@ -36,7 +36,7 @@ min-height:80vh;
   height:50px;
   display:flex;
   margin-top:10px;
-  // justify-content:center;
+  justify-content:center;
   // align-items:center;
   width:100%;
 
@@ -47,7 +47,7 @@ min-height:80vh;
   display:flex;
   width:200px;
   margin-left:5px;
-  background:#fff;
+  background:rgba(255, 255, 255, 0.75);
   color:#000;
   border-radius:5px;
   padding:10px 20px;
@@ -56,12 +56,9 @@ min-height:80vh;
   align-items:center;
 
   &:last-child{
-    background:rgb(211, 54, 80);
+    background:rgb(211, 54, 80,0.75);
     width:50px;
     cursor:pointer;
-    &:hover{
-      
-    }
 
   }
   `
