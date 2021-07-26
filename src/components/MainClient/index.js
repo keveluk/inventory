@@ -57,7 +57,7 @@ const [client, setClient] = useState({
 
   function handleChange(e){
     if(e.target.getAttribute('name')==='nome'){
-      
+      console.log(e.target.value)
       setClient({id:client.id,
         nome:e.target.value,
                 endereco:client.endereco,

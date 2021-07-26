@@ -9,7 +9,7 @@ export default function ClientForm(props) {
     <S.H1>Clientes</S.H1>
     <S.Left>
     <S.FormGroup>
-      <S.Input type="input"  placeholder="Nome" name="nome" id='nome' required />
+      <S.Input type="input" value={props.client.nome} onChange={e=>props.handle(e)}  placeholder="Nome" name="nome" id='nome' required />
       <S.Label htmlFor="nome">Nome</S.Label>
     </S.FormGroup>
     <S.FormGroup>
