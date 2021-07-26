@@ -1,30 +1,35 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
+import * as S from './styled.js';
 
+export default function ClientForm() {
 
-// export default function ClientForm(props) {
-//   const [fields, setFields] = useState({
-//      nome:"Carlos",
-//       endereco:"Rua tal"
-
-//   });
-
-//   // function handlePesquisa() {
-//   //   axios.get(`https://api.github.com/users/${usuario}/repos`).then(res => console.log(res.data))
-    
-//   // }
-
-//   function save(){
-//     setFields({
-//       nome:"",
-//       endereco:""
-//     })
-//   }
-
-//   return (
-//     <>
-//       <input className="input" placeholder="Nome" value={fields.nome} onChange={e => setFields({nome:e.target.value})} placeholder="Nome" />
-//       <input className="input" placeholder="Addr" value={fields.addr} onChange={e => setFields({addr:e.target.value})} placeholder="Endereço" />
-//       <button type="button" onClick={save}>Salvar</button>
-//     </>
-//   );
-// }
+  return (
+    <>
+    <S.Left>
+    <S.FormGroup>
+      <S.Input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+      <S.Label for="name" class="form__label">Name</S.Label>
+    </S.FormGroup>
+    <S.FormGroup>
+      <S.Input type="input" class="form__field" placeholder="Endereco" name="endereco" id='endereco' required />
+      <S.Label for="endereco" class="form__label">Endereco</S.Label>
+    </S.FormGroup>
+    <S.FormGroup>
+      <S.Input type="input" class="form__field" placeholder="Cep" name="cep" id='cep' required />
+      <S.Label for="cep" class="form__label">Cep</S.Label>
+    </S.FormGroup>
+    <S.FormGroup>
+      <S.Input type="input" class="form__field" placeholder="Cidade" name="cidade" id='cidade' required />
+      <S.Label for="cidade" class="form__label">Cidade</S.Label>
+    </S.FormGroup>
+    <S.FormGroup>
+      <S.Input type="input" class="form__field" placeholder="Estado" name="estado" id='estado' required />
+      <S.Label for="estado" class="form__label">Estado</S.Label>
+    </S.FormGroup>
+    </S.Left>
+      <S.Right>
+        <S.Btn>Salvar</S.Btn>
+      </S.Right>
+    </>
+  );
+}
