@@ -23,8 +23,8 @@ height:auto;
   `
 export const Section = styled.div`
 background-image: linear-gradient(to right, #0987A0, #805AD5);
+padding-bottom:50px;
 padding-top:50px;
-min-height:80vh;
   width: 100%;
   display: flex;
   justify-content: flex-start;
