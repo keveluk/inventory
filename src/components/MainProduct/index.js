@@ -59,7 +59,7 @@ const [product, setProduct] = useState({
   }
 
   function handleChange(e){
-    if(e.target.getAttribute('name')=='produto'){
+    if(e.target.getAttribute('name')==='produto'){
       
       setProduct({id:product.id,
                 produto:e.target.value,
@@ -68,7 +68,7 @@ const [product, setProduct] = useState({
                 comprimento:product.comprimento,
                 peso:product.peso
   })
-    }else if(e.target.getAttribute('name')=='altura'){
+    }else if(e.target.getAttribute('name')==='altura'){
       
 setProduct({id:product.id,
                 produto:product.produto,
@@ -77,7 +77,7 @@ setProduct({id:product.id,
                 comprimento:product.comprimento,
                 peso:product.peso
   })
-    }else if(e.target.getAttribute('name')=='largura'){
+    }else if(e.target.getAttribute('name')==='largura'){
       
       setProduct({id:product.id,
                   produto:product.produto,
@@ -86,7 +86,7 @@ setProduct({id:product.id,
                 comprimento:product.comprimento,
                 peso:product.peso
   })
-    }else if(e.target.getAttribute('name')=='comprimento'){
+    }else if(e.target.getAttribute('name')==='comprimento'){
       setProduct({id:product.id,
                 produto:product.produto,
                 altura:product.altura,
@@ -94,7 +94,7 @@ setProduct({id:product.id,
                 comprimento: e.target.value,
                 peso:product.peso
   })
-    }else if(e.target.getAttribute('name')=='peso'){
+    }else if(e.target.getAttribute('name')==='peso'){
       setProduct({id:product.id,
                 produto:product.produto,
                 altura:product.altura,

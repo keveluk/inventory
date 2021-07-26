@@ -9,24 +9,24 @@ export default function ClientForm(props) {
     <S.H1>Clientes</S.H1>
     <S.Left>
     <S.FormGroup>
-      <S.Input type="input"   class="form__field" placeholder="Nome" name="nome" id='nome' required />
-      <S.Label for="nome" class="form__label">Nome</S.Label>
+      <S.Input type="input"  placeholder="Nome" name="nome" id='nome' required />
+      <S.Label htmlFor="nome">Nome</S.Label>
     </S.FormGroup>
     <S.FormGroup>
-      <S.Input type="input" value={props.client.endereco} onChange={e=>props.handle(e)} class="form__field" placeholder="Endereco" name="endereco" id='endereco' required />
-      <S.Label for="endereco" class="form__label">Endereco</S.Label>
+      <S.Input type="input" value={props.client.endereco} onChange={e=>props.handle(e)}  placeholder="Endereco" name="endereco" id='endereco' required />
+      <S.Label htmlFor="endereco">Endereco</S.Label>
     </S.FormGroup>
     <S.FormGroup>
-      <S.Input type="input" value={props.client.cep} onChange={e=>props.handle(e)} class="form__field" placeholder="Cep" name="cep" id='cep' required />
-      <S.Label for="cep" class="form__label">Cep</S.Label>
+      <S.Input type="input" value={props.client.cep} onChange={e=>props.handle(e)}  placeholder="Cep" name="cep" id='cep' required />
+      <S.Label htmlFor="cep">Cep</S.Label>
     </S.FormGroup>
     <S.FormGroup>
-      <S.Input type="input" value={props.client.cidade} onChange={e=>props.handle(e)} class="form__field" placeholder="Cidade" name="cidade" id='cidade' required />
-      <S.Label for="cidade" class="form__label">Cidade</S.Label>
+      <S.Input type="input" value={props.client.cidade} onChange={e=>props.handle(e)}  placeholder="Cidade" name="cidade" id='cidade' required />
+      <S.Label htmlFor="cidade">Cidade</S.Label>
     </S.FormGroup>
     <S.FormGroup>
-      <S.Input type="input" value={props.client.estado} onChange={e=>props.handle(e)} class="form__field" placeholder="Estado" name="estado" id='estado' required />
-      <S.Label for="estado" class="form__label">Estado</S.Label>
+      <S.Input type="input" value={props.client.estado} onChange={e=>props.handle(e)}  placeholder="Estado" name="estado" id='estado' required />
+      <S.Label htmlFor="estado">Estado</S.Label>
     </S.FormGroup>
     </S.Left>
       <S.Right>

@@ -16,10 +16,6 @@ const [client, setClient] = useState({
   const [cadastros, setCadastros] = useState([])
 
   function attCadastro(){
-    // let list = [];
-    // for(var i=0, len=localStorage.length; i<len; i++) {
-    // var key = localStorage.key(i);
-    // var value = localStorage[key];
     let clientes = localStorage.getItem('clientes');
     if(clientes != null){
       let listaClientes = JSON.parse(clientes);
@@ -60,7 +56,7 @@ const [client, setClient] = useState({
   }
 
   function handleChange(e){
-    if(e.target.getAttribute('name')=='nome'){
+    if(e.target.getAttribute('name')==='nome'){
       
       setClient({id:client.id,
         nome:e.target.value,
@@ -69,7 +65,7 @@ const [client, setClient] = useState({
                 cidade:client.cidade,
                 estado:client.estado
   })
-    }else if(e.target.getAttribute('name')=='endereco'){
+    }else if(e.target.getAttribute('name')==='endereco'){
       
 setClient({id:client.id,
   nome:client.nome,
@@ -78,7 +74,7 @@ setClient({id:client.id,
                 cidade:client.cidade,
                 estado:client.estado
   })
-    }else if(e.target.getAttribute('name')=='cep'){
+    }else if(e.target.getAttribute('name')==='cep'){
       
       setClient({id:client.id,
         nome:client.nome,
@@ -87,7 +83,7 @@ setClient({id:client.id,
                 cidade:client.cidade,
                 estado:client.estado
   })
-    }else if(e.target.getAttribute('name')=='cidade'){
+    }else if(e.target.getAttribute('name')==='cidade'){
       setClient({id:client.id,
         nome:client.nome,
                 endereco:client.endereco,
@@ -95,7 +91,7 @@ setClient({id:client.id,
                 cidade: e.target.value,
                 estado:client.estado
   })
-    }else if(e.target.getAttribute('name')=='estado'){
+    }else if(e.target.getAttribute('name')==='estado'){
       setClient({id:client.id,
         nome:client.nome,
                 endereco:client.endereco,
