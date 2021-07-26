@@ -5,10 +5,11 @@ export default function ClientForm() {
 
   return (
     <>
+    <S.H1>Clientes</S.H1>
     <S.Left>
     <S.FormGroup>
-      <S.Input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-      <S.Label for="name" class="form__label">Name</S.Label>
+      <S.Input type="input" class="form__field" placeholder="Nome" name="nome" id='nome' required />
+      <S.Label for="nome" class="form__label">Nome</S.Label>
     </S.FormGroup>
     <S.FormGroup>
       <S.Input type="input" class="form__field" placeholder="Endereco" name="endereco" id='endereco' required />
@@ -29,6 +30,7 @@ export default function ClientForm() {
     </S.Left>
       <S.Right>
         <S.Btn>Salvar</S.Btn>
+        <S.Btn>Listar</S.Btn>
       </S.Right>
     </>
   );

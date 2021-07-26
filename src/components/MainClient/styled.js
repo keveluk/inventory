@@ -14,8 +14,10 @@ export const Header = styled.div`
 // background: black;
 // border:2px solid black;
 width:100%;
-min-height:20vh;
+// min-height:20vh;
+height:auto;
   display: flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
   `
