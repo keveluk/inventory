@@ -3,7 +3,7 @@ import * as S from './styled.js';
 import ProductForm from '../ProductForm/index.js';
 
 
-function MainProduct() {
+export default function MainProduct() {
 const [product, setProduct] = useState({
      id:0,
     produto:"",
@@ -142,5 +142,3 @@ setProduct({id:product.id,
     </>
   );
 }
-
-export default MainProduct;
