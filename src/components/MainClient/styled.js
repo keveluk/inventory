@@ -23,9 +23,45 @@ height:auto;
   `
 export const Section = styled.div`
 background-image: linear-gradient(to right, #0987A0, #805AD5);
+padding-top:50px;
 min-height:80vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction:column;
+  `
+
+  export const Item = styled.div`
+  height:50px;
+  display:flex;
+  margin-top:10px;
+  // justify-content:center;
+  // align-items:center;
+  width:100%;
+
+  
+  `
+  export const ItemChild = styled.div`
+  height:50px;
+  display:flex;
+  width:200px;
+  margin-left:5px;
+  background:#fff;
+  color:#000;
+  border-radius:5px;
+  padding:10px 20px;
+   display:flex;
+    justify-content:center;
+  align-items:center;
+
+  &:last-child{
+    background:rgb(211, 54, 80);
+    width:50px;
+    cursor:pointer;
+    &:hover{
+      
+    }
+
+  }
   `

@@ -42,7 +42,7 @@ font-family: inherit;
   border: 0;
   border-bottom: 2px solid #fff;
   outline: 0;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: #fff;
   padding: 7px 0;
   background: transparent;
@@ -57,7 +57,7 @@ position: absolute;
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #fff;
 
   `
