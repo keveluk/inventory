@@ -16,10 +16,6 @@ const [product, setProduct] = useState({
   const [cadastros, setCadastros] = useState([])
 
   function attCadastro(){
-    // let list = [];
-    // for(var i=0, len=localStorage.length; i<len; i++) {
-    // var key = localStorage.key(i);
-    // var value = localStorage[key];
     let cadastros = localStorage.getItem('produtos');
     if(cadastros != null){
       let listaProdutos = JSON.parse(cadastros);
